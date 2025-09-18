@@ -1,0 +1,26 @@
+;.step param Tx list 0n 1n 2n
+
+.params
++ T1    = 0
++ T2    = Ton1+Td*4 + Tx
++ Ts    = 1/fs
++ Ton1  = Ts*0.25
++ Ton2  = Ts-Ton1-Td*8 + Tx*2
++ fs    = 5meg
++ Td    = 2n
++ Tx    = 0n
+
+.params
++ V.dc      = 10
++ C.dc      = 10u
++ R.dc      = 10
++ V.dut     = 5
++ L.ph      = 330n
++ R.ph.s    = 10m
++ R.ph.p    = 10k
++ C.bulk    = 1.5m / 20
+
+.params
++ T.start   = Ts*5000
++ T.stop    = T.start + Ts*4
++ T.step    = 2n
